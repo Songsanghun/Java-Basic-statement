@@ -6,13 +6,15 @@ public class ReportCard {
             System.out.println("name : ");
             String name = s.next();
             System.out.println("If you want to stop, Type -1");
+            System.out.println("If the number of subject is 6, Auto quit!!");
             int total = 0; int count = 0;
-            while(true){
+            while(count<=5){
                   System.out.println("score : ");
                   int score = s.nextInt();
-                  if(score==-1){break;}
-                  total = total + score;
-                  count = count+1;
+                  total+=score;
+                  //total=total+score;
+                  count++;
+                  //count=count+1;
             }
             int average = total / count;
             char grade = 0;
@@ -25,7 +27,7 @@ public class ReportCard {
             }else{
                   grade = 'D';
             }
-            System.out.println("name : "+name);
+            System.out.printf("%s %s","name : ",name);
             System.out.println("Total : "+total);
             System.out.println("Average : "+average);
             System.out.println("Grade :"+grade);

@@ -1,4 +1,4 @@
-package com.hanbit.loop_while;
+package com.hanbit.loop_for;
 
 /**
  * @FILE : SeriesOneToFive.java
@@ -6,17 +6,15 @@ package com.hanbit.loop_while;
  * @AUTHOR: Song Sang Hun
  * @STORY : 1부터 5까지의 합 구하기(diff=1)
  */
-public class SeriesOneToFive {
+public class Unary {
 	public static void main(String[] args) {
 		int sum = 0;
-		int num = 1;
-		while (true) {
-			sum = sum+num;
-			//sum+=num;
-			if(num==5){break;}
-			num=num+1;
+		for(int num = 0;num<5;num++){
+			//int num = init ; num<5 = limit ; num++ = step
+			
+			System.out.println("Num: "+num);
+			sum+=num;
 		}
-		sum = 1 + 2 + 3 + 4 + 5;
 		System.out.println("합은 " + sum + "입니다.");
 	}
 }
