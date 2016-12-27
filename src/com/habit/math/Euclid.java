@@ -47,7 +47,7 @@ public class Euclid {
                   Scanner sc = new Scanner(System. in);
                    a = sc.nextInt();
                    b = sc.nextInt();
-
+                   
                    // 대소비교
                    if ( a > b) {
                          big = a;
@@ -56,9 +56,16 @@ public class Euclid {
                          big = b;
                          small = a;
                   }
-                   while( true){
-                	   
+                   while(big%small!=0){
+                	   nmg=big%small;
+                	   big=small;
+                	   small=nmg;
+                		   }
+                   gcd=small;
+                   lcm=(b*a)/gcd;
+            
                          // 이 부분을 코딩하여 완성하시오
-                  }
+                   System.out.println("최대"+gcd+"최소"+lcm);
+                   
             }
 }
