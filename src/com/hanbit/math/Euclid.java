@@ -1,4 +1,4 @@
-package com.habit.math;
+package com.hanbit.math;
 import java.util.Scanner;
 
 public class Euclid {
@@ -63,8 +63,6 @@ public class Euclid {
                 		   }
                    gcd=small;
                    lcm=(b*a)/gcd;
-            
-                         // 이 부분을 코딩하여 완성하시오
                    System.out.println("최대"+gcd+"최소"+lcm);
                    
             }

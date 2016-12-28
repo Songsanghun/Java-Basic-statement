@@ -1,4 +1,4 @@
-package com.habit.math;
+package com.hanbit.math;
 
 /**
 @FILE  : FindTheSumOfMulti5.java

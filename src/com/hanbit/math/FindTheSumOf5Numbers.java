@@ -1,4 +1,4 @@
-package com.habit.math;
+package com.hanbit.math;
 import java.util.Scanner;
 public class FindTheSumOf5Numbers {
 public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package com.habit.math;
+package com.hanbit.math;
 import java.util.Scanner;
 /**
 @FILE  : NumberGolf.java
