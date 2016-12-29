@@ -17,21 +17,13 @@ public class Zigzag {
         for(i=0;i<arr.length;i++){
         	System.out.println("");
         	for(j=0;j<arr[i].length;j++){
-        		flag=i;
-        		switch(flag){
-        		case 0: case 2: case 4: arr[i][j]=k++;break;
-        		case 1: case 3: arr[i][j]=k;
-        				k=
-        				;break;
+        				if(i%2==0){
+        			arr[i][j]=i*5+j+1;
+        				}else{
+        			arr[i][j]=i*5-j+5;		
+        				}
+    				System.out.printf("[%d]",arr[i][j]);
         		}
-        		System.out.printf(" %d ",arr[i][j]);
         	}
         }
-        
-        
-        
-        
-
-
     }
-}

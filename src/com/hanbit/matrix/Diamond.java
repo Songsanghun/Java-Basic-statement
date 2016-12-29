@@ -12,7 +12,23 @@ public class Diamond {
         int[][] arr = new int[ col][ row];
         start=3; //열의 시작 위치
         end=3; //열의 끝 위치
-
+        int[][]mtx=new int[5][5];
+        int k=1;
+		for(int i=0;i<mtx.length;i++){
+			System.out.println("");
+			
+			for(int j=0;j<mtx[i].length;j++){
+				switch(i){
+				case 0: 
+				case 1: 
+				case 2:
+				case 3:
+				case 4:
+					mtx[i][j]
+				}
+				System.out.printf("[%d,%d]",mtx[i][j]);
+			}
+		}
 
     }
 }
