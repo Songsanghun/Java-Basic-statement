@@ -1,4 +1,5 @@
 package com.hanbit.matrix;
+import java.util.Scanner;
 /*
   1   2   3   4   5
  10   9   8   7   6
@@ -8,21 +9,29 @@ package com.hanbit.matrix;
  * */
 public class Zigzag {
     public static void main(String[] args) {
-        int length = 5; // 배열 길이
+    	Scanner s = new Scanner(System.in);
+    	System.out.println("길이를 입력해주세요.");
+    	int length = s.nextInt(); // 배열 길이
         int i = 0; // 행
         int j = 0; // 열
         int k = 1; // 넣을 값
         int flag = 1; // 스위치변수
-        int[][] arr = new int[5][5];
+        
+        int[][] arr = new int[length][length];
         for(i=0;i<arr.length;i++){
         	System.out.println("");
         	for(j=0;j<arr[i].length;j++){
-        				if(i%2==0){
-        			arr[i][j]=i*5+j+1;
+        		
+        		flag=(i%2==0)?1:-1;
+        		arr[i][j]=(i%2==0)?i*length+j*flag+1:i*length+j*flag+length;
+        				/*if(i%2==0){
+        					flag=1;
+        			arr[i][j]=i*length+j*flag+k;
         				}else{
-        			arr[i][j]=i*5-j+5;		
-        				}
-    				System.out.printf("[%d]",arr[i][j]);
+        					flag=-1;
+        			arr[i][j]=i*length+j*flag+length;		
+        				}*/
+    				System.out.printf("[%d]\t",arr[i][j]);
         		}
         	}
         }
