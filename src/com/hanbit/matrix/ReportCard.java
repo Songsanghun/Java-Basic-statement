@@ -18,16 +18,14 @@ public class ReportCard {
             for(i=0;i<arr2.length;i++){
             	arr2[i]=s.nextInt();
             	if(arr2[i]>=0&&arr2[i]<=100){
-            		arr2[i]=arr2[i];
+            		total+=arr2[i];
+                	temp+=arr2[i]+"\t";
             	}else{
             		System.out.printf("%s\n","0에서 100사이의 숫자를 입력해주세요.");
-            		total-=arr2[i];
             		i--;
             	}
-            	total+=arr2[i];
-            	temp+=arr2[i]+"\t";
+            	
             }
-            System.out.println("토탈"+total);
             subjectString+=temp;
             average = total / arr2.length;
             int sw=average/10;
