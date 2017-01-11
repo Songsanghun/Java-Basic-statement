@@ -168,5 +168,15 @@ VALUES ('s_140303003',140303003,91001,4234,130211,'입원치료');
 INSERT INTO Charts(chart_id,treat_id,doc_id,pat_id,nur_id,chart_contents)
 VALUES ('p_140308087',140308087,62019,7643,71018,'장염 입원치료');
 
-select * from 
+select * FROM
+Charts c 
+FULL OUTER JOIN Treatments t
+on c.treat_id=t.treat_id
+FULL OUTER JOIN Patients p
+on c.pat_id=p.pat_id
+FULL OUTER JOIN Nurses n
+on c.nur_id=n.nur_id
+FULL OUTER JOIN Doctors d
+on c.doc_id=d.doc_id
+where chart_id is not null;
 
